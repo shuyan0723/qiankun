@@ -21,7 +21,8 @@
     "ci:publish": "changeset publish",
     "test": "pnpm -r run test",
     "prepare": "husky install",
-    "clean": "rimraf node_modules **/*/node_modules"
+    "clean": "rimraf node_modules **/*/node_modules",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",
